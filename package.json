@@ -3,11 +3,10 @@
   "version": "1.0.2",
   "description": "",
   "main": ".eslintrc.js",
-  "dependencies": {
-    "babel-loader": "7.1.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-loader": "7.1.5",
     "babel-preset-env": "^1.7.0",
     "jest": "^23.6.0",
     "webpack": "^4.20.2",
