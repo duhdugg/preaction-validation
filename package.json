@@ -1,27 +1,35 @@
 {
   "name": "preaction-validation",
-  "version": "1.0.0",
-  "private": true,
-  "directories": {
-    "lib": "lib"
+  "version": "1.0.1",
+  "description": "",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "babel-loader": "7.1.5"
   },
-  "scripts": {
-    "linter": "eslint --ext js ./",
-    "test": "NODE_ENV=test nyc mocha test/*"
-  },
-  "author": "Doug Elkin <doug@drelyn.net>",
-  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-plugin-__coverage__": "^11.0.0",
-    "babel-preset-es2015": "^6.24.1",
-    "eslint": "^4.19.1",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "mocha": "^4.1.0",
-    "nyc": "^11.9.0"
-  }
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-env"
+    ]
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/drelyn86/preaction-validation.git"
+  },
+  "author": "Doug Elkin <doug@drelyn.net> (https://drelyn.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/drelyn86/preaction-validation/issues"
+  },
+  "homepage": "https://gitlab.com/drelyn86/preaction-validation#readme"
 }

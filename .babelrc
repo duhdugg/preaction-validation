@@ -1,8 +1,0 @@
-{
-  "env": {
-    "test": {
-      "plugins": [ "__coverage__" ]
-    }
-  },
-  "presets": [ "es2015" ]
-}

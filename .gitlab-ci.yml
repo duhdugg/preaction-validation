@@ -1,13 +1,18 @@
 image: node:10
 
 before_script:
-  - which npm
-  - npm -v
-  - npm install
+  - which yarn
+  - yarn -v
+  - yarn install
 
 stages:
+  - build
   - test
 
 test:
   stage: test
-  script: npm test
+  script: yarn test --coverage
+
+build:
+  stage: build
+  script: yarn build
