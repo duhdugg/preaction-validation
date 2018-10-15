@@ -6,7 +6,7 @@ import isbn10Validator from './dist/isbn10.min.js'
 import isbn13Validator from './dist/isbn13.min.js'
 import notEmptyValidator from './dist/notEmpty.min.js'
 
-export {
+export default {
   baseValidator,
   dateValidator,
   emailValidator,
