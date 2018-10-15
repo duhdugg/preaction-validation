@@ -2,7 +2,7 @@
   "name": "preaction-validation",
   "version": "1.0.4",
   "description": "",
-  "main": ".eslintrc.js",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.3",
