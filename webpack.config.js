@@ -8,7 +8,7 @@ module.exports = {
     email: './lib/email.js',
     empty: './lib/empty.js',
     isbn10: './lib/isbn10.js',
-    isb13: './lib/isbn13.js',
+    isbn13: './lib/isbn13.js',
     notEmpty: './lib/notEmpty.js',
     number: './lib/number.js',
     phone: './lib/phone.js',
