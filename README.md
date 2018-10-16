@@ -22,10 +22,17 @@ npm:
 npm install --save preaction-validation
 ```
 
-importing and using:
+import
 
 ```javascript
 import { emailValidator } from 'preaction-validation'
+// or
+const emailValidator = require('preaction-validation').emailValidator
+```
+
+use:
+
+```javascript
 let errorMessage
 let valid
 
