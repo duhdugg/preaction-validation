@@ -1,31 +1,25 @@
 {
   "name": "preaction-validation",
   "version": "1.0.14",
-  "description": "",
+  "description": "This is a small validation library.",
   "main": "dist/preaction-validation.min.js",
   "dependencies": {},
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^5.6.1",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "jest": "^23.6.0",
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "8.0.6",
+    "healthier": "2.0.0",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "prettier": "^1.18.2",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
-  },
-  "babel": {
-    "presets": [
-      "babel-preset-env"
-    ]
+    "webpack-cli": "^3.3.9"
   },
   "scripts": {
-    "build": "webpack",
-    "linter": "eslint --ext js ./lib",
+    "build": "webpack -p ./lib/index.js -o ./dist/preaction-validation.min.js --output-library-target commonjs",
     "test": "jest"
   },
   "repository": {
