@@ -24,12 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/drelyn86/preaction-validation.git"
+    "url": "git+ssh://git@gitlab.com/dougelkin/preaction-validation.git"
   },
-  "author": "Doug Elkin <doug@drelyn.net> (https://drelyn.net)",
+  "author": "Doug Elkin <doug@dougelkin.com> (https://dougelkin.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/drelyn86/preaction-validation/issues"
+    "url": "https://gitlab.com/dougelkin/preaction-validation/issues"
   },
-  "homepage": "https://gitlab.com/drelyn86/preaction-validation#readme"
+  "homepage": "https://gitlab.com/dougelkin/preaction-validation#readme"
 }
