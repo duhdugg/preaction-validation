@@ -13,21 +13,21 @@ Install with yarn or npm.
 yarn:
 
 ```bash
-yarn add preaction-validation
+yarn add @preaction/validation
 ```
 
 npm:
 
 ```bash
-npm install --save preaction-validation
+npm install --save @preaction/validation
 ```
 
 import
 
 ```javascript
-import { emailValidator } from 'preaction-validation'
+import { emailValidator } from '@preaction/validation'
 // or
-const emailValidator = require('preaction-validation').emailValidator
+const emailValidator = require('@preaction/validation').emailValidator
 ```
 
 use:
