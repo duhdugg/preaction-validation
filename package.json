@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "webpack -p ./lib/index.js -o ./dist/preaction-validation.min.js --output-library-target commonjs",
-    "test": "prettier -c lib/* webpack.config.js prettier.config.js babel.config.js && eslint lib/* *.js && jest --coverage"
+    "test": "prettier -c lib/* webpack.config.js prettier.config.js babel.config.js __tests__/* && eslint lib/* __tests__/* *.js && jest --coverage"
   },
   "eslintConfig": {
     "extends": "plugin:prettier/recommended",

@@ -1,6 +1,5 @@
-/* global describe: false, it: false */
+/* global describe, it */
 
-import { baseValidator } from '../dist/preaction-validation.min.js'
 const assert = require('assert')
 const index = require('../lib/index.js')
 const nodeModule = require('../dist/preaction-validation.min.js')
@@ -41,6 +40,7 @@ describe('lib/empty.js', () => {
 
 describe('lib/isbn10.js', () => {
   it('isbn10Validator', () => {
+    // https://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-10_check_digit_calculation
     assert.ok(index.isbn10Validator('123456789X') === '')
     assert.ok(index.isbn10Validator('1234567890') !== '')
     assert.ok(index.isbn10Validator('123456789a0') !== '')
@@ -52,6 +52,7 @@ describe('lib/isbn10.js', () => {
 
 describe('lib/isbn13.js', () => {
   it('isbn13Validator', () => {
+    // https://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-13_check_digit_calculation
     assert.ok(index.isbn13Validator('9781234567897') === '')
     assert.ok(index.isbn13Validator('9781111111120') === '')
     assert.ok(index.isbn13Validator('9781234567898') !== '')
@@ -128,8 +129,5 @@ describe('lib/index.js', () => {
 describe('dist/preaction-validation.min.js', () => {
   it('imports as commonjs', () => {
     assert.ok(nodeModule.baseValidator !== undefined)
-  })
-  it('imports as ES module', () => {
-    assert.ok(baseValidator !== undefined)
   })
 })
