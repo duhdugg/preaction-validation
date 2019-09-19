@@ -1,6 +1,6 @@
 {
   "name": "@preaction/validation",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "This is a small validation library.",
   "main": "dist/preaction-validation.min.js",
   "dependencies": {},
