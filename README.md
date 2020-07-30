@@ -47,6 +47,12 @@ console.debug(valid, errorMessage) // false, 'Enter a valid email.'
 
 ## Use In Browser With CDN
 
+CDN URL:
+
+`https://cdn.jsdelivr.net/npm/@preaction/validation@latest/dist/preaction-validation.umd.min.js`
+
+_Remember to replace "latest" with the version number in production._
+
 ```
 <!DOCTYPE html>
 <html>
@@ -54,7 +60,7 @@ console.debug(valid, errorMessage) // false, 'Enter a valid email.'
     <title>Test</title>
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/gh/duhdugg/preaction-validation@v1.3.8/dist/preaction-validation.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@preaction/validation@latest/dist/preaction-validation.umd.min.js"></script>
     <script>
       var errorMessage = window['@preaction/validation'].emailValidator(
         'testing'
