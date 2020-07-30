@@ -1,6 +1,6 @@
 import { getBabelOutputPlugin } from '@rollup/plugin-babel'
-import { uglify } from 'rollup-plugin-uglify'
 import pkg from './package.json'
+import { terser } from 'rollup-plugin-terser'
 
 export default {
   input: 'lib/index.js',
@@ -43,7 +43,7 @@ export default {
             ],
           ],
         }),
-        uglify(),
+        terser(),
       ],
     },
   ],
