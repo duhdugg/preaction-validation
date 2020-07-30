@@ -27,7 +27,7 @@ import
 ```javascript
 import { emailValidator } from '@preaction/validation'
 // or
-const emailValidator = require('@preaction/validation').emailValidator
+const { emailValidator } = require('@preaction/validation')
 ```
 
 use:
