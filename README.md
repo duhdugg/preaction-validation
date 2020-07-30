@@ -44,3 +44,23 @@ errorMessage = emailValidator('test@example.')
 valid = !errorMessage
 console.debug(valid, errorMessage) // false, 'Enter a valid email.'
 ```
+
+## Use In Browser With CDN
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/gh/duhdugg/preaction-validation@v1.3.8/dist/preaction-validation.umd.min.js"></script>
+    <script>
+      var errorMessage = window['@preaction/validation'].emailValidator(
+        'testing'
+      )
+      console.debug(errorMessage)
+    </script>
+  </body>
+</html>
+```
