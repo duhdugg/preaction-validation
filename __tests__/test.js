@@ -1,7 +1,6 @@
 /* global describe, it */
 
 const assert = require('assert')
-// const index = require('../dist/preaction-validation.cjs.js')
 import {
   baseValidator,
   dateValidator,
