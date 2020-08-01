@@ -4,6 +4,10 @@
   "description": "This is a small validation library.",
   "main": "dist/preaction-validation.cjs.js",
   "module": "dist/preaction-validation.esm.js",
+  "files": [
+    "dist/*",
+    "lib/*"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.10.5",
