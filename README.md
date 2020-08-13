@@ -30,16 +30,16 @@ _Remember to replace `latest` with the version number in production._
 
 ## Importing Functions
 
-### CommonJS Module
-
-```js
-const { notEmptyValidator } = require('@preaction/validation')
-```
-
 ### ES Module
 
 ```js
 import { notEmptyValidator } from '@preaction/validation'
+```
+
+### CommonJS Module
+
+```js
+const { notEmptyValidator } = require('@preaction/validation')
 ```
 
 ### IIFE
