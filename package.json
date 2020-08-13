@@ -19,15 +19,17 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.1.0",
     "jest-cli": "^26.1.0",
+    "jsdoc-to-markdown": "^6.0.1",
     "prettier": "^2.0.5",
     "rollup": "^2.23.0",
     "rollup-plugin-terser": "^6.1.0"
   },
   "scripts": {
-    "build": "yarn rollup -c",
+    "build": "rollup -c",
+    "build-doc": "jsdoc2md --separators lib/*.js",
     "eslint-check": "eslint lib/* __tests__/* *.js",
     "prettier-check": "prettier -c lib/* *.js *.json __tests__/*",
-    "test": "yarn prettier-check && yarn eslint-check && jest --coverage"
+    "test": "npm run prettier-check && npm run eslint-check && jest --coverage"
   },
   "eslintConfig": {
     "env": {
