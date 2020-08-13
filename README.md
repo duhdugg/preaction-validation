@@ -50,4 +50,4 @@ const { notEmptyValidator } = window['@preaction/validation']
 
 ## API
 
-See [API.md](API.md).
+See [API.md](https://github.com/duhdugg/preaction-validation/blob/master/API.md).

@@ -6,8 +6,7 @@
   "module": "dist/preaction-validation.esm.js",
   "files": [
     "dist/*",
-    "lib/*",
-    "API.md"
+    "lib/*"
   ],
   "dependencies": {},
   "devDependencies": {
