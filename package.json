@@ -53,5 +53,8 @@
   "bugs": {
     "url": "https://github.com/duhdugg/preaction-validation/issues"
   },
-  "homepage": "https://github.com/duhdugg/preaction-validation#readme"
+  "homepage": "https://github.com/duhdugg/preaction-validation#readme",
+  "keywords": [
+    "validation"
+  ]
 }
