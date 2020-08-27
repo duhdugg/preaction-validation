@@ -26,10 +26,10 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "build-doc": "jsdoc2md --separators lib/*.js > API.md",
-    "eslint-check": "eslint lib/* __tests__/* *.js",
-    "prettier-check": "prettier -c lib/* *.js *.json __tests__/*",
-    "test": "npm run prettier-check && npm run eslint-check && jest --coverage"
+    "build:doc": "jsdoc2md --separators lib/*.js > API.md",
+    "eslint:check": "eslint lib/* __tests__/* *.js",
+    "prettier:check": "prettier -c lib/* *.js *.json __tests__/*",
+    "test": "npm run prettier:check && npm run eslint:check && jest --coverage"
   },
   "eslintConfig": {
     "env": {
